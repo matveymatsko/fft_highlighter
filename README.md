@@ -1,6 +1,6 @@
 # fft_highlighter
 I was fortunate enough to be a part of the VERITAS/SOAR Program. The program allows community college students to execute research with scientists and engineers of NASA’s VERITAS space mission. I distinguished all aspects of the geometry and development of regions with joint sets and grabens on Earth using MATLAB and QGIS that can be used as analogues to Venus tessera terrains.
 
-This script highlights areas of specific pixel intensities of a DEM (digital elevation model) file and outputs the binary overaly mask over the set pixel intensities.
+Purpose: The fft_highlighter algorithm is used to detect joint sets space using MATLAB's fft2/ifft2 functions. The user will either manually input images in two ways: choosing certain layers of pixel intensities present in the DEM image by selecting the 'Files' option or clicking on the 'Choose 3 Colors' option so the user can utilize the colorpicker function in order to choose only 3 pixel intensities present in the image. The last option of the GUI menu, 'Auto-Detect', while automatically detect the colors that are present in the joint sets. All three options will use the chosen pixel intensities layers and the image of the DEM data, apply fft2 onto each of them, find the difference between each layer and the DEM image, and finally add all of the differences together into one binary mask that could then be used as an overlay binary mask for the DEM data image. The images can be in the following format: .png .jpg .jpeg .ti
 
 The program was developed via MATLAB 2024a.
